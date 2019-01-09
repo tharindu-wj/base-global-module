@@ -1,0 +1,22 @@
+/vendor/
+.idea/
+package-lock.json
+.sass-cache/
+**/styles.min.map.css
+*.DS_Store
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+composer.lock
+
+#styles
+**/.sass-cache
+**/*.map
+
+#Editors
+.idea/workspace.xml
+.idea/*git
+.idea/*
+.idea/workspace.xml
+/.idea

@@ -1,0 +1,22 @@
+{
+  "name": "resources-block",
+  "version": "dev-1.0",
+  "description": "This extension lets you add a resources to your website.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/basemaster/resources-block.git"
+  },
+  "keywords": ["wordpress", "resources", "wp", "unyson"],
+  "author": "N Sivanoly <sivanoly@eight25media.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/basemaster/resources-block/issues"
+  },
+  "homepage": "https://gitlab.com/basemaster/resources-block"
+}
