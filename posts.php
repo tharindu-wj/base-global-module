@@ -35,7 +35,7 @@ register_post_type(
 // Resources Category
 register_taxonomy(
     'module-types',
-    array('careers'),
+    array('global-module'),
     array(
         'hierarchical' => true,
         'labels' => array(
