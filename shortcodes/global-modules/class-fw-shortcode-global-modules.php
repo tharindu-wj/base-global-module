@@ -9,12 +9,21 @@
 
 class FW_Shortcode_Global_Modules extends FW_Shortcode
 {
+    /**
+     * @var array
+     */
+    private static $module_args = array(
+        'post_type' => 'global-module',
+        'orderby' => 'title',
+        'order' => 'ASC',
+    );
+
+    /**
+     * @return array
+     */
     public static function getGlobalModules()
     {
-        $args = array(
-            'post_type' => 'global-module',
-            'order' => 'ASC',
-        );
+        $args = self::$module_args;
 
         $the_query = new WP_Query($args);
         $modules = $the_query->posts;
@@ -26,11 +35,16 @@ class FW_Shortcode_Global_Modules extends FW_Shortcode
         return $option_arr;
     }
 
+    /**
+     * @param $tax
+     * @return array
+     */
     public static function getGlobalModulesByTax($tax)
     {
         $args = array(
             'post_type' => 'global-module',
             'order' => 'ASC',
+            'orderby' => 'title',
             'tax_query' => array(
                 array(
                     'taxonomy' => 'module-types',
@@ -52,6 +66,9 @@ class FW_Shortcode_Global_Modules extends FW_Shortcode
         return $option_arr;
     }
 
+    /**
+     * @return mixed
+     */
     public static function getModuleTypes()
     {
         $terms = get_terms(array(
@@ -68,6 +85,9 @@ class FW_Shortcode_Global_Modules extends FW_Shortcode
         return $tax_arr;
     }
 
+    /**
+     * @return mixed
+     */
     public static function getModuleOptions()
     {
         $module_types = self::getModuleTypes();

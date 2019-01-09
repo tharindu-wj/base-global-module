@@ -3,11 +3,11 @@
 $manifest = array();
 
 $manifest['name'] = __('Global Modules', '{domain}');
-$manifest['uri'] = 'https://gitlab.com/basemaster/resources';
-$manifest['description'] = __('This extension lets you  to add a blog posts filtered with type', '{domain}');
+$manifest['uri'] = 'https://gitlab.com/basemaster/global-modules';
+$manifest['description'] = __('This extension lets you add common base components and view them in separate pages.', '{domain}');
 $manifest['version'] = 'dev-1.0';
 $manifest['author'] = 'Tharindu W';
-$manifest['gitlab_repo'] = 'https://gitlab.com/basemaster/resources.git';
+$manifest['gitlab_repo'] = 'https://gitlab.com/basemaster/global-modules\'.git';
 
 
 /**
@@ -25,5 +25,5 @@ $manifest['standalone'] = true;
  * All framework extensions has thumbnails set in the available extensions list
  * but if your extension is not in that list and id located in the theme, you can set the thumbnail via this parameter
  */
-$manifest['thumbnail'] = plugin_dir_url(__FILE__) . 'static/img/resources.png';
+$manifest['thumbnail'] = plugin_dir_url(__FILE__) . 'static/img/global-module.jpg';
 

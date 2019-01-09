@@ -20,4 +20,9 @@ $options = array(
         'choices' => $module_options,
         'show_borders' => true,
     ),
+    'css_class' => array(
+        'type' => 'text',
+        'label' => __('CSS Class', 'fw'),
+        'desc' => __('Add class to global wrapper', 'fw')
+    ),
 );

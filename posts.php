@@ -19,7 +19,7 @@ register_post_type(
         ),
         'public' => true,
         'supports' => array('title', 'revision'),
-        'menu_icon' => 'dashicons-media-default',
+        'menu_icon' => 'dashicons-schedule',
         'taxonomies' => array(),
         'publicly_queryable' => true,
         'show_ui' => true,
