@@ -97,7 +97,6 @@ class FW_Shortcode_Global_Modules extends FW_Shortcode
                 'type' => 'select', // or 'short-select'
                 'choices' => self::getGlobalModules(),
                 'desc' => __('Select module name to insert here', '{domain}'),
-                'help' => __('Help tip', '{domain}'),
             ),
         );
 
@@ -109,7 +108,6 @@ class FW_Shortcode_Global_Modules extends FW_Shortcode
                         'type' => 'select', // or 'short-select'
                         'choices' => self::getGlobalModulesByTax($value),
                         'desc' => __('Select module name to insert here', '{domain}'),
-                        'help' => __('Help tip', '{domain}'),
                     ),
                 );
             }
