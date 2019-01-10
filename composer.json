@@ -1,18 +1,24 @@
 {
-  "name": "e25/unyson-blogs",
+  "name": "tharindu-wj/unyson-global-module",
   "type": "wordpress-plugin",
-  "license": ["MIT"],
-  "description": "This extension lets you add a blog posts to your website.",
+  "license": ["GPL-2.0"],
+  
+  "description": "unyson framework for WordPress",
   "authors": [
     {
-      "name": "Tharindu W",
-      "email": "tharinduw@eight25media.com",
-      "homepage": "eight25media.com"
+      "name": "Tharindu Wickramasinghe",
+      "email": "tharinduwjh@gmail.com",
+      "homepage": "https://github.com/tharindu-wj/base-global-module"
     }
   ],
-  "keywords": ["wordpress", "blogs", "wp", "unyson"],
+  "keywords": [
+    "wordpress", "composer","wp","unyson"
+  ],
+  
   "require": {
-    "php": ">=5.6"
+    "php": ">=5.6" 
   },
-  "scripts": {}
+  "scripts": {
+}
+  
 }
